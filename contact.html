@@ -24,7 +24,12 @@
             <p>We'd love to hear from you. Send us a message about your project or inquiry.</p>
         </div>
 
-        <form action="https://formsubmit.co/contact@ember-and-oak.org" method="POST" class="sleek-form hidden">
+        <div id="successMessage" style="display: none; text-align: center; padding: 2rem;">
+            <h2>Message Sent!</h2>
+            <p style="color: #aaa;">Thank you for reaching out. We'll get back to you shortly.</p>
+        </div>
+
+        <form id="contactForm" action="https://formsubmit.co/contact@ember-and-oak.org" method="POST" class="sleek-form hidden">
             <!-- Honeypot -->
             <input type="text" name="_honey" style="display:none">
             <!-- Disable Captcha -->
