@@ -4,19 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ember & Oak | Premium Home & Tech</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a1a; color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
-        .container { border: 1px solid #333; padding: 3rem; border-radius: 8px; background: #222; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        h1 { color: #e67e22; margin-bottom: 0.5rem; letter-spacing: 2px; }
-        p { color: #888; font-size: 1.1rem; }
-        .tagline { border-top: 1px solid #444; margin-top: 20px; padding-top: 20px; font-style: italic; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>EMBER & OAK</h1>
-        <p>Premium Home Gadgets & Phone Protection</p>
-        <div class="tagline">Something sophisticated is coming soon.</div>
-    </div>
+
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="images/eo-logo.png" alt="Ember & Oak" class="interactive-logo">
+        </a>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero hidden">
+        <div class="container">
+            <h1>EMBER & OAK</h1>
+            <p>Premium Home Gadgets & Phone Protection</p>
+        </div>
+    </header>
+
+    <section class="container hidden">
+        <h2 class="text-center mb-4">Featured Collection</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <!-- Placeholder Cards -->
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 8px;" class="hidden">
+                <h3>Smart Living</h3>
+                <p style="color: #aaa; margin-top: 1rem;">Elevate your home with our curated selection of smart devices designed for modern living.</p>
+            </div>
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 8px;" class="hidden">
+                <h3>Protection Redefined</h3>
+                <p style="color: #aaa; margin-top: 1rem;">Sleek, durable phone protection that doesn't compromise on style or functionality.</p>
+            </div>
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 8px;" class="hidden">
+                <h3>Minimalist Audio</h3>
+                <p style="color: #aaa; margin-top: 1rem;">Immersive sound experiences wrapped in premium, understated design.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ember & Oak. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

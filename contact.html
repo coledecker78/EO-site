@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ember & Oak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="images/eo-logo.png" alt="Ember & Oak" class="interactive-logo">
+        </a>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="container hidden">
+        <div class="hero">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Send us a message about your project or inquiry.</p>
+        </div>
+
+        <form action="https://formsubmit.co/contact@ember-and-oak.org" method="POST" class="sleek-form hidden">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Project details or questions..." rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ember & Oak. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
