@@ -15,6 +15,7 @@
         <div class="nav-links">
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="#" onclick="checkout()" style="color: var(--accent-color); font-weight: bold;">Cart (<span id="cart-count">0</span>)</a>
         </div>
     </nav>
 
@@ -27,20 +28,9 @@
 
     <section class="container hidden">
         <h2 class="text-center mb-4">Featured Collection</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-            <!-- Placeholder Cards -->
-            <div style="background: var(--card-bg); padding: 2rem; border-radius: 8px;" class="hidden">
-                <h3>Smart Living</h3>
-                <p style="color: #aaa; margin-top: 1rem;">Elevate your home with our curated selection of smart devices designed for modern living.</p>
-            </div>
-            <div style="background: var(--card-bg); padding: 2rem; border-radius: 8px;" class="hidden">
-                <h3>Protection Redefined</h3>
-                <p style="color: #aaa; margin-top: 1rem;">Sleek, durable phone protection that doesn't compromise on style or functionality.</p>
-            </div>
-            <div style="background: var(--card-bg); padding: 2rem; border-radius: 8px;" class="hidden">
-                <h3>Minimalist Audio</h3>
-                <p style="color: #aaa; margin-top: 1rem;">Immersive sound experiences wrapped in premium, understated design.</p>
-            </div>
+        <div id="product-grid" class="product-grid">
+            <!-- Products will be loaded here dynamically via script.js -->
+            <p style="text-align: center; color: #777;">Loading products...</p>
         </div>
     </section>
 
