@@ -3,41 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ember & Oak | Premium Home & Tech</title>
+    <title>EO Site - Multi-Category Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav>
-        <a href="index.html" class="logo-link">
-            <img src="images/eo-logo.png?v=new" alt="Ember & Oak" class="interactive-logo">
-        </a>
+        <div class="interactive-logo">
+            <!-- Simple text logo for demo -->
+            <h2 style="margin:0; color:var(--accent-color);">EO</h2>
+        </div>
         <div class="nav-links">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="#" onclick="checkout()" style="color: var(--accent-color); font-weight: bold;">Cart (<span id="cart-count">0</span>)</a>
+            <a href="#electronics">Electronics</a>
+            <a href="#snacks">Snacks</a>
+            <a href="#beauty">Beauty</a>
         </div>
     </nav>
 
-    <header class="hero hidden">
-        <div class="container">
-            <h1>EMBER & OAK</h1>
-            <p>Premium Home Gadgets & Phone Protection</p>
-        </div>
+    <header class="hero">
+        <h1>Everyday Essentials</h1>
+        <p>Discover our curated collections across electronics, treats, and self-care.</p>
     </header>
 
-    <section class="container hidden">
-        <h2 class="text-center mb-4">Featured Collection</h2>
-        <div id="product-grid" class="product-grid">
-            <!-- Products will be loaded here dynamically via script.js -->
-            <p style="text-align: center; color: #777;">Loading products...</p>
-        </div>
-    </section>
+    <div class="container">
+        <!-- Electronics Section -->
+        <section id="electronics" class="theme-electronics">
+            <h2 class="text-center mb-4" style="color: var(--accent-color);">Consumer Electronics</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Smart Watch Series 5</h3>
+                    <div class="price">$299.99</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Noise Cancelling Headphones</h3>
+                    <div class="price">$199.99</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Wireless Earbuds</h3>
+                    <div class="price">$129.99</div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Snacks Section -->
+        <section id="snacks" class="theme-snacks">
+            <h2 class="text-center mb-4" style="color: var(--accent-color);">Snacks & Candy</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1621939514649-28b12e81658b?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Gourmet Popcorn</h3>
+                    <div class="price">$14.99</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1582058928232-216869aa053f?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Artisan Chocolate Bar</h3>
+                    <div class="price">$8.50</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Organic Fruit Chips</h3>
+                    <div class="price">$6.99</div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beauty Section -->
+        <section id="beauty" class="theme-beauty">
+            <h2 class="text-center mb-4" style="color: var(--accent-color);">Health & Beauty</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdd403348?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Rejuvenating Face Serum</h3>
+                    <div class="price">$45.00</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1612817288484-1f4758d80165?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Organic Shea Butter</h3>
+                    <div class="price">$22.50</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Aromatherapy Candle</h3>
+                    <div class="price">$18.00</div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2>Stay Updated</h2>
+            <form class="sleek-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Ember & Oak. All rights reserved.</p>
+        <p>&copy; 2024 EO Site. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
