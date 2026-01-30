@@ -1,4 +1,4 @@
-/* Design Principles for a Multi-Category Brand */
+/* Design Principles for a Tech Brand */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700&display=swap');
 
 :root {
@@ -238,17 +238,4 @@ footer {
 
 .product-card button:hover {
     background-color: #d35400;
-}
-
-/* Category Themes */
-.theme-electronics {
-    --accent-color: #3498db; /* Tech Blue */
-}
-
-.theme-snacks {
-    --accent-color: #f1c40f; /* Energetic Yellow */
-}
-
-.theme-beauty {
-    --accent-color: #e84393; /* Soft Pink */
 }
